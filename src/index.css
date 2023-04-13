@@ -11,3 +11,84 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* 
+body {
+  font-family: Arial, sans-serif;
+} */
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Main container */
+.BeerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.BeerList,
+.BeerDescription,
+.BeerImage {
+  flex-basis: calc(33% - 20px);
+  margin: 10px;
+}
+
+/* BeerList, BeerDescription, BeerImage */
+.BeerList {
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.BeerDescription {
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.BeerImage {
+  text-align: center;
+}
+
+.BeerImage img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* UserFavourites */
+.UserFavourites {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.UserFavourites h2 {
+  font-size: 24px;
+}
